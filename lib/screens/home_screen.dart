@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:chatter/healpers.dart';
 import 'package:chatter/theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -6,6 +7,7 @@ import 'package:chatter/pages/calls_pages.dart';
 import 'package:chatter/pages/contacts_pages.dart';
 import 'package:chatter/pages/messages_page.dart';
 import 'package:chatter/pages/notifications_pages.dart';
+import 'package:chatter/widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
@@ -39,15 +41,35 @@ class HomeScreen extends StatelessWidget {
         title: ValueListenableBuilder(
           valueListenable: title,
           builder: (BuildContext context, String value, _) {
-            return Text(
-              value,
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 16,
+            return Center(
+              child: Text(
+                value,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
               ),
             );
           },
         ),
+        leadingWidth: 54,
+        leading: Align(
+          alignment: Alignment.centerRight,
+          child: IconBackground(
+            icon: Icons.search,
+            onTap: () {
+              print("TODO SEARSh ");
+            },
+          ),
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 24.0),
+            child: Avatar.small(
+              url: Helpers.randomPictureUrl(),
+            ),
+          )
+        ],
       ),
       body: ValueListenableBuilder(
         valueListenable: pageIndex,
