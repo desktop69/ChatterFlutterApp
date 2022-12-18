@@ -3,7 +3,7 @@ import 'package:logger/logger.dart' as log;
 import 'package:stream_chat_flutter_core/stream_chat_flutter_core.dart';
 
 // input your Stream app key here budy and good luck.
-const streamKey = 'nw7cufwq3hmg';
+const streamKey = 'de2dr7be2prd';
 var logger = log.Logger();
 
 /// Extensions can be used to add functionality to the SDK.

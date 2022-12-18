@@ -8,6 +8,9 @@ const users = [
   userSahil,
   userReuben,
   userNash,
+  userMark,
+  userAycha,
+  userwej,
 ];
 
 const userGordon = DemoUser(
@@ -57,6 +60,22 @@ const userNash = DemoUser(
   image:
       'https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg',
 );
+const userMark = DemoUser(
+  id: 'mark',
+  name: 'Mark Zuckerberg',
+  image:
+      'https://media.cnn.com/api/v1/images/stellar/prod/150628162539-mark-zuckerberg-rainbow.jpg?q=h_528,w_528,x_0,y_0,c_crop/h_619,w_1100,c_lpad,b_rgb:061015/w_800',
+);
+const userAycha = DemoUser(
+  id: 'aycha',
+  name: 'Aisha Jebri',
+  image:
+      'https://scontent.ftun1-2.fna.fbcdn.net/v/t39.30808-6/309234273_777646486850020_1092285652357805311_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Ks8KfKGZyHkAX-PtzX5&tn=un_GP3fOW7sTKstX&_nc_ht=scontent.ftun1-2.fna&oh=00_AfBoOpvmK43eLCqHXP2FQ7NKnRfyjjpZ7b67ZwcRSK_7ng&oe=639C900A',
+);
+const userwej = DemoUser(
+    id: 'wejden',
+    name: 'wejden Makki',
+    image: 'https://mpost.io/wp-content/uploads/image-46-44.jpg');
 
 @immutable
 class DemoUser {

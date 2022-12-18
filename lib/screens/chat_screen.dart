@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:chatter/helpers.dart';
-import 'package:chatter/widgets/display_error_message.dart';
+// ignore: depend_on_referenced_packages
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:chatter/theme.dart';
-import 'package:chatter/widgets/glowing_action_button.dart';
+
 import 'package:chatter/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

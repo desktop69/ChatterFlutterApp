@@ -8,6 +8,9 @@ import 'package:chatter/app.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);
+  static Route get route => MaterialPageRoute(
+        builder: (context) => HomeScreen(),
+      );
 
   final ValueNotifier<int> pageIndex = ValueNotifier(0);
   final ValueNotifier<String> title = ValueNotifier('Messages');
@@ -35,9 +38,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: Theme.of(context).iconTheme,
-        backgroundColor: Colors.transparent,
-        elevation: 0,
+
         title: ValueListenableBuilder(
           valueListenable: title,
           builder: (BuildContext context, String value, _) {

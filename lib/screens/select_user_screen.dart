@@ -26,6 +26,7 @@ class _SelectUserScreenState extends State<SelectUserScreen> {
     });
 
     try {
+      // pass the user data
       final client = StreamChatCore.of(context).client;
       await client.connectUser(
         User(
